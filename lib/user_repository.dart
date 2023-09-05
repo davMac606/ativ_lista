@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, unnecessary_this
+
 import 'package:ativ_lista/user.dart';
 
 class UserRepository {
@@ -19,13 +21,5 @@ class UserRepository {
     }
   }
 
-  bool login(User user) {
-    for (var i = 0; i < _users.length; i) {
-      if (_users[i].username == user.username &&
-          _users[i].password == user.password) {
-        return true;
-      }
-    }
-    return false;
-  }
+  
 }
